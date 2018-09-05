@@ -1,17 +1,3 @@
-$(document).ready(function() {
-  $('img').hover(
-    function() {
-      $(this).css('max-height', '65%');
-    },
-    function() {
-      $(this).css('max-height', '55%');
-    }
-  );
-});
-
-// $(document).ready(function () {
-//     loadRepo();
-// });
 function loadRepo() {
   const xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {

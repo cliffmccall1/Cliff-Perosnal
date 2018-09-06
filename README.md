@@ -1,5 +1,8 @@
 # Cliff-Perosnal
-# This is a project for Bethel School of Technology. 
+
+# This is a project for Bethel School of Technology.
+
+### After completing the requirements of this project I made some personal updates of my own. All criteria for the project can be seen on the branch "start up"
 
 Project Requirements
 

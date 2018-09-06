@@ -12,6 +12,7 @@ body {
   background-color: #f0eff0;
   font-family: 'Roboto', sans-serif;
 }
+
 .welcome {
   background-image: url(img/welcome.jpg);
   background-size: cover;
@@ -29,9 +30,9 @@ body {
   line-height: 1;
   text-align: center;
   margin-bottom: auto;
-  border-top: 2px solid #2f2f28;
+  border-top: 3px solid #2f2f28;
   padding-top: 0.5em;
-  border-bottom: 2px solid #2f2f28;
+  border-bottom: 3px solid #2f2f28;
 }
 span {
   display: block;
@@ -44,36 +45,6 @@ span {
   color: #af1c1c;
   font-size: 5em;
   font-family: 'Oswald', sans-serif;
-}
-footer {
-  background: #2f2f28;
-  padding: 1em 0;
-  text-align: center;
-  color: #f8f5f2;
-  max-width: 100%;
-}
-
-.social-icon {
-  width: 10%;
-  height: 10%;
-  padding: 1em;
-}
-
-.copyright {
-  display: block;
-  height: 1px;
-  background: rgba(#f0eff0, 0.25);
-  margin: 2em auto;
-  width: 100%;
-}
-.button {
-  display: inline-block;
-  color: #f0eff0;
-  background: #d70026;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  border: none;
-  padding: 0.5em 1.5em;
 }
 
 .about-me {
@@ -130,4 +101,33 @@ footer {
 }
 .repositories {
   text-decoration: none;
+}
+footer {
+  background: #2f2f28;
+  padding: 1em 0;
+  text-align: center;
+  color: #f8f5f2;
+  max-width: 100%;
+}
+
+.social-icon {
+  width: 10%;
+  height: 10%;
+  padding: 1em;
+}
+
+.copyright {
+  display: block;
+  height: 1px;
+  background: rgba(#f0eff0, 0.25);
+  margin: 2em auto;
+  width: 100%;
+}
+p.copyright::before {
+  content: '';
+  display: block;
+  height: 1px;
+  background: #f0eff0;
+  margin: 1em auto;
+  width: 25%;
 }

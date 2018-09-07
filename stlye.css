@@ -40,6 +40,11 @@ span {
   font-size: 5em;
   font-family: 'Oswald', sans-serif;
 }
+@media (min-width: 50em) {
+  .welcome-title {
+    font-size: 3vw;
+  }
+}
 .about-title {
   display: block;
   color: #af1c1c;
@@ -55,6 +60,7 @@ span {
   max-height: 35em;
   margin-right: 1em;
 }
+
 .about-title {
   margin-bottom: 0.25em;
 }
@@ -98,6 +104,9 @@ span {
 }
 .intro-body {
   padding-left: 0.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .repositories {
   text-decoration: none;

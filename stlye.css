@@ -23,24 +23,35 @@ body {
   justify-content: center;
   color: #f0eff0;
 }
-.welcome-title {
+/* .welcome-title {
   font-size: 1.5rem;
   font-weight: 400;
   color: #f0eff0;
-  text-shadow: 1px 1px #2f2f28;
+  text-shadow: 0.5px 0.5px #2f2f28;
   line-height: 1;
   text-align: center;
   margin-bottom: auto;
   border-top: 3px solid #2f2f28;
   padding-top: 0.5em;
   border-bottom: 3px solid #2f2f28;
-}
-span {
+} */
+/* span {
   display: block;
   color: #af1c1c;
   font-size: 5em;
   text-shadow: none;
   font-family: 'Oswald', sans-serif;
+} */
+.welcome-img {
+  height: 75%;
+  /* max-height: 35em; */
+  margin-right: 1em;
+  opacity: 0.75;
+}
+.line {
+  height: 15%;
+  border: 4px solid #af1c1c;
+  opacity: 0.75;
 }
 @media (min-width: 50em) {
   .welcome-title {

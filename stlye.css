@@ -17,7 +17,7 @@ body {
   background-image: url(img/welcome.jpg);
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -89,6 +89,7 @@ span {
     grid-column: port / port;
   }
 }
+/* Intro Section */
 .intro {
   display: flex;
   background-color: #2f2f28;
@@ -108,9 +109,25 @@ span {
   flex-direction: column;
   justify-content: center;
 }
-.repositories {
-  text-decoration: none;
+/* certifications Section */
+.certifications-title {
+  display: block;
+  color: #af1c1c;
+  font-size: 2.5em;
+  font-family: 'Oswald', sans-serif;
 }
+.certifications a {
+  text-decoration: none;
+  color: inherit;
+}
+.certifications ul {
+  list-style: none;
+}
+.certifications .row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+/* Footer Section */
 footer {
   background: #2f2f28;
   padding: 1em 0;
@@ -118,20 +135,21 @@ footer {
   color: #f8f5f2;
   max-width: 100%;
 }
+.footer-title::after {
+  content: '';
+  display: block;
+  height: 1px;
+  background: #f0eff0;
+  margin: 1em auto;
+  width: 25%;
+}
 
 .social-icon {
-  width: 10%;
-  height: 10%;
+  max-width: 60px;
+  max-height: 60px;
   padding: 1em;
 }
 
-.copyright {
-  display: block;
-  height: 1px;
-  background: rgba(#f0eff0, 0.25);
-  margin: 2em auto;
-  width: 100%;
-}
 p.copyright::before {
   content: '';
   display: block;

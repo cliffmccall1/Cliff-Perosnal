@@ -27,6 +27,7 @@ body {
   font-size: 1.5rem;
   font-weight: 400;
   color: #f0eff0;
+  text-shadow: 1px 1px #2f2f28;
   line-height: 1;
   text-align: center;
   margin-bottom: auto;
@@ -38,6 +39,7 @@ span {
   display: block;
   color: #af1c1c;
   font-size: 5em;
+  text-shadow: none;
   font-family: 'Oswald', sans-serif;
 }
 @media (min-width: 50em) {

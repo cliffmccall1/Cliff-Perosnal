@@ -134,15 +134,38 @@ body {
   color: inherit;
   cursor: pointer;
 }
-.certifications ul {
-  list-style: none;
-}
 .certifications .row {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
+.certifications .bst {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+.certifications .links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.certifications .bstA {
+  display: block;
+  color: #af1c1c;
+  /* background: #af1c1c; */
+  padding: 2px 4px;
+  font-size: 1em;
+  margin: 5px;
+  cursor: pointer;
+}
+.bst::after {
+  content: '';
+  display: block;
+  height: 1px;
+  background: #2f2f28;
+  margin: 1em auto;
+  width: 100%;
+}
 /* Footer Section */
 footer {
+  margin-top: 2em;
   background: #2f2f28;
   padding: 1em 0;
   text-align: center;

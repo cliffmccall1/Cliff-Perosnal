@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+
 
 <head>
   <title>Cliff McCall - Full Stack Developer</title>
+  <link rel="shortcut icon" href="img/cm.ico">
   <!-- Link to stylesheet -->
   <link href="stlye.css" rel="stylesheet">
   <meta charset="utf-8">
@@ -41,33 +42,68 @@
     </div>
   </section>
 
-
   <section class="certifications">
     <div class="certifications-title">Certifications</div>
     <div class="row">
       <div class="col">
         <h1>Udemy Courses</h1>
         <ul>
-          <li><a href="https://lh3.googleusercontent.com/RFu83alRYpcLu26gKWJ1Q1LxmOJcYnXN_J2hwOboxHCJML9kHva6DigmMnYOkP6dmRrN9aHEs5_rQL1YS10rMvq09J1TB-ldtOqVCGdQLImXfT6AtsBHLsP-acG5mIRx85CV7PddVg=w2400"
-              target="blank">Master GitHub in 2 Hours</a></li>
-          <li><a href="https://lh3.googleusercontent.com/YFo87FGB0k3IOLkkEdEbngGPbWr1i70Io-C7CtQydYgyhdVZlxu_Zi-ca7l5D5OacDUp_pEjGt8sYIly8f4pzKVaIzYMitQ4EuegKVNTBJD3gCiHuBxFZDqg8UIu6UhlDXvEev0nxw=w2400"
-              target="blank">Angular & NodeJS - The MEAN Stack Guide</a></li>
+          <li><a class="button" data-modal="#modalOne">Master GitHub</a></li>
+          <li><a class="button" data-modal="#modalTwo">Angular & NodeJS - The MEAN Stack Guide</a></li>
         </ul>
       </div>
       <div class="col">
         <h1>FreeCodeCamp</h1>
         <ul>
-          <li><a href="https://www.freecodecamp.org/certification/cliffmccall1/responsive-web-design" target="blank">Responsive
-              Web
-              Design</a></li>
-          <li><a href="https://www.freecodecamp.org/certification/cliffmccall1/javascript-algorithms-and-data-structures"
-              target="blank">JavaScript
-              Algorithms and Data Structures</a></li>
+          <li><a class="button" data-modal="#modalFour">Responsive Web Design</a></li>
+          <li><a class="button" data-modal="#modalThree">JavaScript Algorithms and Data Structures</a></li>
         </ul>
       </div>
     </div>
-
   </section>
+  <!-- MODAL -->
+  <div id="modalOne" class="modal">
+    <div class="modal-content">
+      <div class="contact-form">
+        <a class="close">&times;</a>
+        <h2>Master GitHub</h2><br>
+        <img class="modal-img" src="https://lh3.googleusercontent.com/RFu83alRYpcLu26gKWJ1Q1LxmOJcYnXN_J2hwOboxHCJML9kHva6DigmMnYOkP6dmRrN9aHEs5_rQL1YS10rMvq09J1TB-ldtOqVCGdQLImXfT6AtsBHLsP-acG5mIRx85CV7PddVg=w2400"
+          alt="">
+      </div>
+    </div>
+  </div>
+  <div id="modalTwo" class="modal">
+    <div class="modal-content">
+      <div class="contact-form">
+        <a class="close">&times;</a>
+        <h2>Angular & NodeJS - The MEAN Stack Guide</h2><br>
+        <img class="modal-img" src="https://lh3.googleusercontent.com/YFo87FGB0k3IOLkkEdEbngGPbWr1i70Io-C7CtQydYgyhdVZlxu_Zi-ca7l5D5OacDUp_pEjGt8sYIly8f4pzKVaIzYMitQ4EuegKVNTBJD3gCiHuBxFZDqg8UIu6UhlDXvEev0nxw=w2400"
+          alt="">
+      </div>
+    </div>
+  </div>
+  <div id="modalThree" class="modal">
+    <div class="modal-content">
+      <div class="contact-form">
+        <span class="close">&times;</span>
+        <h2>JavaScript Algorithms and Data Structures</h2><br>
+        <img class="modal-img" src="https://lh3.googleusercontent.com/pkvqHSMxF683uHskH8IZI878VIAneSf7OltF6BKEEkfGs1rDIqut7XF15zWTS-dE8ZqqR504CREFS_FJOF-i_R3SLrTJN2_QSC62kWNBw3Jk2Yr89lIZ82pTupQWBIRqNyX9v5R1ng=w2400"
+          alt="">
+      </div>
+    </div>
+  </div>
+  <div id="modalFour" class="modal">
+    <div class="modal-content">
+      <div class="contact-form">
+        <span class="close">&times;</span>
+        <h2>JavaScript
+          Algorithms and Data Structures</h2><br>
+        <img class="modal-img" src="https://lh3.googleusercontent.com/UZr9jUGwmMUIgLvHU2LqhgkLdmfMhYJJqLhhA8t8ACBcmWVKLLGVJxEwb6LlhTWa3PMJP6J7Yq58T5eYHWxLl5NwCr1Gu7qWRZUfTNkQWsdm-zDW-aKHofZ6MgxA8BN1JQL1UMx8Zg=w2400"
+          alt="">
+      </div>
+    </div>
+  </div>
+  <!-- MODAL END -->
 
   <footer>
     <div class="footer-title">Follow me on social media</div>
@@ -81,4 +117,9 @@
     <p class="copyright">Copyright 2018 Cliff McCall</p>
   </footer>
 
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+  <script src="main.js"></script>
 </body>
+
+</html>

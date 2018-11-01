@@ -12,6 +12,9 @@ body {
   background-color: #f0eff0;
   font-family: 'Roboto', sans-serif;
 }
+body a {
+  text-decoration: none;
+}
 
 .welcome {
   background-image: url(img/welcome.jpg);
@@ -231,6 +234,17 @@ p.copyright::before {
     border: 1px solid #2f2f28;
     width: 30%; /* Could be more or less, depending on screen size */
   }
+}
+.modal-links a {
+  color: #af1c1c;
+  font-weight: 900;
+  padding: 5px;
+}
+.modal-links ul {
+  list-style-type: none;
+}
+.modal-links li {
+  display: inline;
 }
 
 /* The Close Button */

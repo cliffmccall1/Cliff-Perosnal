@@ -11,13 +11,14 @@ font-family: 'Oswald', sans-serif;*/
 body {
   background-color: #f0eff0;
   font-family: 'Roboto', sans-serif;
+  color: #2f2f28;
 }
 body a {
   text-decoration: none;
 }
 
 .welcome {
-  background-image: url(img/welcome.jpg);
+  background: url(img/welcome.jpg) fixed;
   background-size: cover;
   background-position: center;
   height: 80vh;
@@ -26,25 +27,6 @@ body a {
   justify-content: center;
   color: #f0eff0;
 }
-/* .welcome-title {
-  font-size: 1.5rem;
-  font-weight: 400;
-  color: #f0eff0;
-  text-shadow: 0.5px 0.5px #2f2f28;
-  line-height: 1;
-  text-align: center;
-  margin-bottom: auto;
-  border-top: 3px solid #2f2f28;
-  padding-top: 0.5em;
-  border-bottom: 3px solid #2f2f28;
-} */
-/* span {
-  display: block;
-  color: #af1c1c;
-  font-size: 5em;
-  text-shadow: none;
-  font-family: 'Oswald', sans-serif;
-} */
 .welcome-img {
   height: 75%;
   /* max-height: 35em; */
@@ -61,12 +43,20 @@ body a {
     font-size: 3vw;
   }
 }
-.about-title {
+.about-title h1 {
   display: block;
   color: #af1c1c;
   text-shadow: 1px 1px 1px #f0eff0;
   font-size: 5em;
   font-family: 'Oswald', sans-serif;
+}
+.about-title span {
+  display: block;
+  color: #2f2f28;
+  text-shadow: 1px 1px 1px #f0eff0;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 900;
+  font-size: 0.25em;
 }
 
 .about-me {
@@ -75,15 +65,44 @@ body a {
 }
 .about-img {
   max-height: 35em;
-  margin-right: 1em;
+  /* margin-right: 1em; */
+  border-radius: 30%;
+  box-shadow: #2f2f282f 5px 5px 5px;
 }
-
-.about-title {
+/* .about-title h1 {
   margin-bottom: 0.25em;
-}
-.about-subtitle {
+} */
+/* .about-title h2 {
   margin: 0.5em 0;
   font-weight: 900;
+} */
+.about-me .row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.about-text {
+  margin-top: 1em;
+  background: url(img/laptop.jpg) center center repeat fixed;
+  background-size: cover;
+  padding: 140px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-text .images {
+  background: rgba(255, 255, 255, 0.582);
+  border-radius: 30%;
+  padding: 1em;
+  margin: 5px;
+}
+.about-text h1 {
+  font-size: 4em;
+  color: #f0eff0;
+  text-align: center;
+  text-shadow: #af1c1c 1px 1px 1px;
+}
+.about-text img {
+  padding: 0.5em;
 }
 @supports (display: grid) {
   .about-me {

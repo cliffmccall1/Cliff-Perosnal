@@ -1,0 +1,117 @@
+.certifications-title {
+  display: block;
+  color: #af1c1c;
+  font-size: 2.5em;
+  font-family: 'Oswald', sans-serif;
+}
+.certifications a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+.certifications .row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.certifications .bst {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+.certifications .links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.certifications .bstA {
+  display: block;
+  color: #af1c1c;
+  padding: 2px 4px;
+  font-size: 1em;
+  margin: 5px;
+  cursor: pointer;
+}
+.bst::after {
+  content: '';
+  display: block;
+  height: 1px;
+  background: #2f2f28;
+  margin: 1em auto;
+  width: 100%;
+}
+
+/* MODAL */
+/* Popup Box */
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 8888; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.75); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #f0eff0;
+  margin: 10vh auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #2f2f28;
+  width: 60%; /* Could be more or less, depending on screen size */
+}
+.modal-img {
+  width: 100%;
+  border: 1px solid #2f2f28;
+}
+@media (min-width: 1366px) {
+  .modal-content {
+    background-color: #f0eff0;
+    margin: 10vh auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #2f2f28;
+    width: 30%; /* Could be more or less, depending on screen size */
+  }
+}
+.modal-links a {
+  color: #af1c1c;
+  font-weight: 900;
+  padding: 5px;
+}
+.modal-links ul {
+  list-style-type: none;
+}
+.modal-links li {
+  display: inline;
+}
+
+/* The Close Button */
+.close {
+  color: #2f2f28;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #a99567;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button.button {
+  background: none;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: #2f2f28 1px solid;
+  padding: 0 0 3px 0;
+  font-size: 16px;
+}
+
+button.button:hover {
+  border-bottom: #a99567 1px solid;
+  color: #a99567;
+}

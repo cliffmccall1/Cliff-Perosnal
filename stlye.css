@@ -94,9 +94,11 @@ body a {
   border-radius: 30%;
   padding: 1em;
   margin: 5px;
+  min-width: 490px;
 }
-.about-text h1 {
+.about-text p {
   font-size: 4em;
+  font-weight: 900;
   color: #f0eff0;
   text-align: center;
   text-shadow: #af1c1c 1px 1px 1px;
@@ -104,6 +106,7 @@ body a {
 .about-text img {
   padding: 0.5em;
 }
+
 @supports (display: grid) {
   .about-me {
     display: grid;

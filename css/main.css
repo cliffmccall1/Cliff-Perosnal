@@ -287,7 +287,7 @@ body a {
 }
 
 @media (min-width: 1366px) {
-  .modal-content {
+  .modal-stuff {
     background-color: #f0eff0;
     margin: 10vh auto;
     /* 15% from the top and centered */

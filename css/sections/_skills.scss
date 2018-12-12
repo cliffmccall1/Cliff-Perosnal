@@ -1,0 +1,29 @@
+.skills {
+  margin-top: 1em;
+  background: url(../img/laptop.jpg) center center repeat fixed;
+  background-size: cover;
+  padding: 140px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .images {
+    background: rgba(255, 255, 255, 0.582);
+    border-radius: 30%;
+    padding: 1em;
+    margin: 5px;
+    min-width: 490px;
+  }
+
+  img {
+    padding: 0.5em;
+  }
+
+  p {
+    font-size: 4em;
+    font-weight: 900;
+    color: #f0eff0;
+    text-align: center;
+    text-shadow: #af1c1c 1px 1px 1px;
+  }
+}

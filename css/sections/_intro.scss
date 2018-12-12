@@ -1,8 +1,12 @@
-.intro {
+#intro {
   display: flex;
   background-color: #2f2f28;
   border: 1px solid #f0eff0;
   color: #f0eff0;
+
+  h2 {
+    font-family: 'Oswald', sans-serif;
+  }
 }
 .intro-title {
   font-weight: 900;

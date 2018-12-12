@@ -1,41 +1,46 @@
+#certifications {
+  margin-left: 1em;
+  margin-right: 1em;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+  }
+  .row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .bst {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .bstA {
+    display: block;
+    color: #af1c1c;
+    padding: 2px 4px;
+    font-size: 1em;
+    margin: 5px;
+    cursor: pointer;
+  }
+  .bst::after {
+    content: '';
+    display: block;
+    height: 1px;
+    background: #2f2f28;
+    margin: 1em auto;
+    width: 100%;
+  }
+}
 .certifications-title {
   display: block;
   color: #af1c1c;
   font-size: 2.5em;
   font-family: 'Oswald', sans-serif;
-}
-.certifications a {
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
-}
-.certifications .row {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-.certifications .bst {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-}
-.certifications .links {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-.certifications .bstA {
-  display: block;
-  color: #af1c1c;
-  padding: 2px 4px;
-  font-size: 1em;
-  margin: 5px;
-  cursor: pointer;
-}
-.bst::after {
-  content: '';
-  display: block;
-  height: 1px;
-  background: #2f2f28;
-  margin: 1em auto;
-  width: 100%;
 }
 
 /* MODAL */
@@ -54,7 +59,7 @@
 }
 
 /* Modal Content/Box */
-.modal-content {
+.modal-stuff {
   background-color: #f0eff0;
   margin: 10vh auto; /* 15% from the top and centered */
   padding: 20px;
@@ -65,6 +70,12 @@
   width: 100%;
   border: 1px solid #2f2f28;
 }
+.modal-links a {
+  color: #af1c1c;
+  font-weight: 900;
+  padding: 5px;
+  text-decoration: none;
+}
 @media (min-width: 1366px) {
   .modal-content {
     background-color: #f0eff0;
@@ -73,17 +84,6 @@
     border: 1px solid #2f2f28;
     width: 30%; /* Could be more or less, depending on screen size */
   }
-}
-.modal-links a {
-  color: #af1c1c;
-  font-weight: 900;
-  padding: 5px;
-}
-.modal-links ul {
-  list-style-type: none;
-}
-.modal-links li {
-  display: inline;
 }
 
 /* The Close Button */

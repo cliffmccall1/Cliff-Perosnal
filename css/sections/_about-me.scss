@@ -1,3 +1,13 @@
+#about {
+  .bg {
+    background-color: darken(#f0eff0, 25%);
+    clip-path: circle(78.2% at 1% 100%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+  }
+}
 .about-title h1 {
   display: block;
   color: #af1c1c;
@@ -14,11 +24,9 @@
   font-size: 0.25em;
 }
 
-.about-me {
-  margin-top: 2.5em;
-  margin-bottom: 2.5em;
-}
 .about-img {
+  margin-top: 1em;
+  margin-left: 1em;
   max-height: 35em;
   border-radius: 30%;
   box-shadow: #2f2f282f 5px 5px 5px;
@@ -36,11 +44,13 @@
       [img-end] 2fr [port-end];
   }
   .about-img {
+    display: grid;
     grid-column: port / img;
     grid-row: 1 / 2;
   }
   .about-title {
-    grid-column: name / port;
+    display: grid;
+    grid-column: name-start / port;
     grid-row: 1 / 2;
     align-self: end;
   }

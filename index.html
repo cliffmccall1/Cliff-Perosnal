@@ -3,18 +3,25 @@
 <head>
   <title>Cliff McCall - Full Stack Developer</title>
   <link rel="shortcut icon" href="img/cm.ico" />
+
   <!-- Link to stylesheet -->
   <link href="css/main.css" rel="stylesheet" />
-  <meta charset="utf-8" />
   <!-- Google Fonts -->
   <link
     href="https://fonts.googleapis.com/css?family=Oswald:700|Roboto:400,900"
     rel="stylesheet"
   />
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous"
+  />
+  <meta charset="utf-8" />
 </head>
 
 <body>
-  <section class="welcome" data-type="background" data-speed="5">
+  <section id="welcome" data-type="background" data-speed="5">
     <div class="line"></div>
     <img
       class="welcome-img"
@@ -25,7 +32,7 @@
   </section>
   <!-- End Welcome -->
 
-  <section class="intro">
+  <section id="intro">
     <div class="intro-title"><h2>Take the Risk</h2></div>
     <!-- End Intro Title -->
     <div class="intro-body">
@@ -42,28 +49,31 @@
   </section>
   <!-- End Intro -->
 
-  <section class="about-me">
-    <img
-      class="about-img"
-      src="img/about.jpg"
-      alt="A picture of Cliff McCall"
-    />
-    <div class="about-title">
-      <h1>Cliff McCall<span>Full Stack JavaScript Developer</span></h1>
+  <section id="about">
+    <div class="bg"></div>
+    <div class="about-me">
+      <img
+        class="about-img"
+        src="img/about.jpg"
+        alt="A picture of Cliff McCall"
+      />
+      <div class="about-title">
+        <h1>Cliff McCall<span>Full Stack JavaScript Developer</span></h1>
+      </div>
+      <!-- end About Title -->
     </div>
-    <!-- end About Title -->
   </section>
   <!-- end about-me -->
 
-  <section class="skills" data-type="background" data-speed="2">
-    <div class="container images">
+  <section id="skills" data-type="background" data-speed="2">
+    <div class="container-fluid images">
       <div class="row">
-        <div class="col-sm-8 col-sm-offset-2"><p>Technical Skills</p></div>
+        <div class="col-sm-8 offset-sm-2"><p>Technical Skills</p></div>
         <!-- end col -->
       </div>
       <!-- end row -->
       <div class="row">
-        <div class="col-sm-8 col-sm-offset-2">
+        <div class="col-sm-6 offset-sm-3">
           <img src="img/html.png" alt="HTML" />
           <img src="img/css.png" alt="CSS" />
           <img src="img/js.png" alt="JavaScript" />
@@ -72,17 +82,19 @@
       </div>
       <!-- end row -->
       <div class="row">
-        <div class="col-sm-8 col-sm-offset-2">
+        <div class="col-sm-8 offset-sm-2">
           <img src="img/react.png" alt="React" />
           <img src="img/angular.png" alt="Angular" />
           <img src="img/node.png" alt="Node.js" />
+          <img src="img/mongodb.png" alt="" />
         </div>
         <!-- end col -->
       </div>
       <!-- end row -->
       <div class="row">
-        <div class="col-sm-8 col-sm-offset-2">
+        <div class="col-sm-6 offset-sm-3">
           <img src="img/c.png" alt="C#" /> <img src="img/net.png" alt=".NET" />
+          <img src="img/sql.png" alt="" />
         </div>
       </div>
     </div>
@@ -90,7 +102,7 @@
   </section>
   <!-- End about-text -->
 
-  <section class="certifications">
+  <section id="certifications">
     <div class="certifications-title">Certifications</div>
     <div class="row bst">
       <div class="col">
@@ -186,26 +198,16 @@
   <!-- MODAL -->
   <!-- Udemy - Master GitHub -->
   <div id="modalOne" class="modal">
-    <div class="modal-content">
+    <div class="modal-stuff">
       <a class="close">&times;</a>
       <h2>Master GitHub</h2>
       <div class="modal-links">
-        <ul>
-          <li>
-            <a
-              href="https://www.udemy.com/certificate/UC-T5Y4PLFA/"
-              target="blank"
-              >Verify Certificate</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.udemy.com/share/100imEBEAecFhXQno=/"
-              target="blank"
-              >Link to Course</a
-            >
-          </li>
-        </ul>
+        <a href="https://www.udemy.com/certificate/UC-T5Y4PLFA/" target="blank"
+          >Verify Certificate</a
+        >
+        <a href="https://www.udemy.com/share/100imEBEAecFhXQno=/" target="blank"
+          >Link to Course</a
+        >
       </div>
       <!-- end modal links -->
       <img
@@ -224,29 +226,18 @@
       <a class="close">&times;</a>
       <h2>Angular & NodeJS - The MEAN Stack</h2>
       <div class="modal-links">
-        <ul>
-          <li>
-            <a
-              href="https://github.com/cliffmccall1/MEAN-stack-course"
-              target="blank"
-              >Project GitHub Repository</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.udemy.com/certificate/UC-8W3HLVW4/"
-              target="blank"
-              >Verify Certificate</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.udemy.com/share/1000nIBEAecFhXQno=/"
-              target="blank"
-              >Link to Course</a
-            >
-          </li>
-        </ul>
+        <a
+          href="https://github.com/cliffmccall1/MEAN-stack-course"
+          target="blank"
+          >Project GitHub Repository</a
+        >
+        <a href="https://www.udemy.com/certificate/UC-8W3HLVW4/" target="blank"
+          >Verify Certificate</a
+        >
+
+        <a href="https://www.udemy.com/share/1000nIBEAecFhXQno=/" target="blank"
+          >Link to Course</a
+        >
       </div>
       <!-- end modal links -->
       <img
@@ -265,27 +256,21 @@
       <span class="close">&times;</span>
       <h2>JavaScript Algorithms and Data Structures</h2>
       <div class="modal-links">
-        <ul>
-          <li>
-            <a
-              href="https://github.com/cliffmccall1/build-a-burger-app"
-              target="blank"
-              >Project GitHub Repository</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.freecodecamp.org/certification/cliffmccall1/javascript-algorithms-and-data-structures"
-              target="blank"
-              >Verify Certificate</a
-            >
-          </li>
-          <li>
-            <a href="https://www.freecodecamp.org/" target="blank"
-              >Link to Course</a
-            >
-          </li>
-        </ul>
+        <a
+          href="https://github.com/cliffmccall1/build-a-burger-app"
+          target="blank"
+          >Project GitHub Repository</a
+        >
+
+        <a
+          href="https://www.freecodecamp.org/certification/cliffmccall1/javascript-algorithms-and-data-structures"
+          target="blank"
+          >Verify Certificate</a
+        >
+
+        <a href="https://www.freecodecamp.org/" target="blank"
+          >Link to Course</a
+        >
       </div>
       <!-- end modal links -->
       <img
@@ -304,27 +289,21 @@
       <span class="close">&times;</span>
       <h2>Responsive Web Design</h2>
       <div class="modal-links">
-        <ul>
-          <li>
-            <a
-              href="https://github.com/cliffmccall1/Responsive-Web-Design-Certification"
-              target="blank"
-              >Project GitHub Repository</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.freecodecamp.org/certification/cliffmccall1/responsive-web-design"
-              target="blank"
-              >Verify Certificate</a
-            >
-          </li>
-          <li>
-            <a href="https://www.freecodecamp.org/" target="blank"
-              >Link to Course</a
-            >
-          </li>
-        </ul>
+        <a
+          href="https://github.com/cliffmccall1/Responsive-Web-Design-Certification"
+          target="blank"
+          >Project GitHub Repository</a
+        >
+
+        <a
+          href="https://www.freecodecamp.org/certification/cliffmccall1/responsive-web-design"
+          target="blank"
+          >Verify Certificate</a
+        >
+
+        <a href="https://www.freecodecamp.org/" target="blank"
+          >Link to Course</a
+        >
       </div>
       <!-- end modal links -->
       <img
@@ -343,29 +322,19 @@
       <span class="close">&times;</span>
       <h2>React 16 (incl. React Router 4 & Redux)</h2>
       <div class="modal-links">
-        <ul>
-          <li>
-            <a
-              href="https://github.com/cliffmccall1/build-a-burger-app"
-              target="blank"
-              >Project GitHub Repository</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.udemy.com/certificate/UC-VB0QXDO6/"
-              target="blank"
-              >Verify Certificate</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.udemy.com/share/1000uMBEAecFhXQno=/"
-              target="blank"
-              >Link to Course</a
-            >
-          </li>
-        </ul>
+        <a
+          href="https://github.com/cliffmccall1/build-a-burger-app"
+          target="blank"
+          >Project GitHub Repository</a
+        >
+
+        <a href="https://www.udemy.com/certificate/UC-VB0QXDO6/" target="blank"
+          >Verify Certificate</a
+        >
+
+        <a href="https://www.udemy.com/share/1000uMBEAecFhXQno=/" target="blank"
+          >Link to Course</a
+        >
       </div>
       <!-- end modal links -->
       <img
@@ -384,29 +353,19 @@
       <span class="close">&times;</span>
       <h2>Selenium WebDriver with C# for Beginners + Live Testing</h2>
       <div class="modal-links">
-        <ul>
-          <li>
-            <a
-              href="https://github.com/cliffmccall1/Selenium-WebDriver-Beginners"
-              target="blank"
-              >Project GitHub Repository</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.udemy.com/certificate/UC-B3UQXVLQ/"
-              target="blank"
-              >Verify Certificate</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.udemy.com/share/1000RGBEAecFhXQno=/"
-              target="blank"
-              >Link to Course</a
-            >
-          </li>
-        </ul>
+        <a
+          href="https://github.com/cliffmccall1/Selenium-WebDriver-Beginners"
+          target="blank"
+          >Project GitHub Repository</a
+        >
+
+        <a href="https://www.udemy.com/certificate/UC-B3UQXVLQ/" target="blank"
+          >Verify Certificate</a
+        >
+
+        <a href="https://www.udemy.com/share/1000RGBEAecFhXQno=/" target="blank"
+          >Link to Course</a
+        >
       </div>
       <!-- end modal links -->
       <img
@@ -439,7 +398,7 @@
       /></a>
     </div>
     <!-- end social icons -->
-    <p class="copyright">Copyright 2018 Cliff McCall</p>
+    <p class="copyright">Copyright 2018 &copy; Cliff McCall</p>
   </footer>
   <!-- end footer -->
 

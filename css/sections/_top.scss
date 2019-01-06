@@ -1,0 +1,35 @@
+#top {
+  // background: url(../img/welcome.jpg) fixed;
+  background-color: #2f2f28;
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #f0eff0;
+}
+.top-img {
+  height: 75%;
+  margin-right: 1em;
+  animation: fadein 5s;
+}
+.line {
+  height: 15%;
+  border: 4px solid #af1c1c;
+  animation: fadein 5s;
+}
+// @media (min-width: 50em) {
+//   .top-title {
+//     font-size: 3vw;
+//   }
+// }
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
